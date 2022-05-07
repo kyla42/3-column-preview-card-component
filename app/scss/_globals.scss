@@ -1,0 +1,74 @@
+@use "util" as u;
+
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+$TransparentWhite: hsla(0, 0%, 100%, 0.75);
+$VeryLightGray: hsl(0, 0%, 95%);
+$fontMain: 'Lexend Deca', sans-serif;
+$fontTitle: 'Big Shoulders Display', cursive;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $fontMain;
+    font-size: 1.5rem;
+    color: $VeryLightGray;
+    background-color: $VeryLightGray;
+
+    @include u.media-bp(md) {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}
+
+a {
+    text-decoration: none;
+    padding: 1.25rem 3rem;
+    border-radius: 2.5rem;
+}
+
+h1 {
+    font-family: $fontTitle;
+    font-size: 4rem;
+    padding: 3.5rem 0 2.5rem 0;
+}
+
+p {
+    color: $TransparentWhite;
+    line-height: 1.68;
+    padding-bottom: 2.5rem;
+
+    @include u.media-bp(md) {
+        padding-bottom: 8.3rem;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include u.media-bp(md) {
+        width: 144rem;
+        height: 80rem;
+    }
+}
+
+.btn {
+    background-color: $VeryLightGray;
+    border: 0.2rem solid $VeryLightGray;
+    transition: all .25s ease;
+}

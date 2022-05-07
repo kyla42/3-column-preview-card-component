@@ -1,0 +1,10 @@
+// md <1023px
+$breakpoint: (
+    "md": "(min-width: 63.9375em)",
+);
+
+@mixin media-bp($size) {
+    @media #{map-get($breakpoint, $size)} {
+        @content;
+    }
+}
