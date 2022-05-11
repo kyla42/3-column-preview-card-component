@@ -39,7 +39,7 @@ a {
     border-radius: 2.5rem;
 }
 
-h1 {
+h2 {
     font-family: $fontTitle;
     font-size: 4rem;
     padding: 3.5rem 0 2.5rem 0;
@@ -71,4 +71,15 @@ p {
     background-color: $VeryLightGray;
     border: 0.2rem solid $VeryLightGray;
     transition: all .25s ease;
+}
+
+.v-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
